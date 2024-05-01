@@ -32,7 +32,19 @@ export default function Skills() {
       className="mb-28 max-w-[48rem] scroll-mt-32 text-center sm:mb-40"
     >
       <SectionHeading>My skills</SectionHeading>
-      <Tooltip className="transition duration-100" id="my-tooltip" />
+      <Tooltip
+        className="transition duration-100"
+        id="my-tooltip"
+        opacity={1}
+        border="2px solid #aaaaaa"
+        style={{
+          backgroundColor: "rgb(57, 222, 248)",
+          color: "#000",
+          fontWeight: 600,
+          fontSize: "18px",
+          borderRadius: "12px",
+        }}
+      />
       <ul className="flex flex-wrap justify-center gap-4 text-lg text-slate-800 mt-12">
         {skillsData.map((skill, index) => (
           <motion.div
