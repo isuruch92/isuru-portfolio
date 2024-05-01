@@ -2,7 +2,7 @@
 
 import React from "react";
 import { motion } from "framer-motion";
-import SectionHeading from "./section-heading";
+import SectionHeading from "./SectionHeading";
 import useSectionInView from "@/hooks/useSectionInView";
 
 export default function About() {

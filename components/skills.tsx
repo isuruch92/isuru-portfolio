@@ -1,7 +1,7 @@
 "use client";
 
 import React from "react";
-import SectionHeading from "./section-heading";
+import SectionHeading from "./SectionHeading";
 import { motion } from "framer-motion";
 import { Tooltip } from "react-tooltip";
 import Image from "next/image";
@@ -11,13 +11,13 @@ import { skillsData } from "@/lib/data";
 const fadeInAnimationVariants = {
   initial: {
     opacity: 0,
-    y: 80,
+    y: 70,
   },
   animate: (index: number) => ({
     opacity: 1,
     y: 0,
     transition: {
-      delay: 0.05 * index,
+      delay: 0.03 * index,
     },
   }),
 };
