@@ -1,7 +1,6 @@
 import React from "react";
-import { CgWorkAlt } from "react-icons/cg";
-import { FaReact } from "react-icons/fa";
-import { LuGraduationCap } from "react-icons/lu";
+import { FaBriefcase } from "react-icons/fa6";
+import { FaGraduationCap } from "react-icons/fa6";
 import p1 from "@/public/p1.jpg";
 import p2 from "@/public/p2.jpg";
 import p3 from "@/public/p3.jpg";
@@ -35,28 +34,75 @@ export const links = [
 
 export const experiencesData = [
   {
-    title: "Graduated bootcamp",
-    location: "Miami, FL",
+    title: "Software Developer",
+    company: "Digia Oy",
+    location: "Tampere, Finland",
     description:
-      "I graduated after 6 months of studying. I immediately found a job as a front-end developer.",
-    icon: React.createElement(LuGraduationCap),
-    date: "2019",
+      "At Digia, I develop sophisticated financial system software, leveraging a robust tech stack including .NET Framework, Visual Studio, C#, Visual Basic .NET, Angular, JavaScript, and jQuery. My role focuses on delivering high-quality, reliable solutions that drive business efficiency and growth.",
+    icon: React.createElement(FaBriefcase),
+    date: "Mar 2024 - Present",
   },
   {
-    title: "Front-End Developer",
-    location: "Orlando, FL",
+    title: "Senior Software Engineer",
+    company: "Matific",
+    location: "Remote",
     description:
-      "I worked as a front-end developer for 2 years in 1 job and 1 year in another job. I also upskilled to the full stack.",
-    icon: React.createElement(CgWorkAlt),
-    date: "2019 - 2021",
+      "As a Senior Software Engineer at Matific, I led the development of essential features for the teacher and parent management platforms, enhancing user experience across devices with Angular 14 components. I optimized workflows using AWS, GitHub, Jira, and other technologies, significantly improving SEO rankings and application performance. My role also included mentoring new engineers and ensuring strategic alignment with company stakeholders.",
+    icon: React.createElement(FaBriefcase),
+    date: "Jul 2020 - Mar 2024",
   },
   {
-    title: "Full-Stack Developer",
-    location: "Houston, TX",
+    title: "Associate Technical Team Lead",
+    company: "CodeGen International",
+    location: "Colombo, Sri Lanka",
     description:
-      "I'm now a full-stack developer working as a freelancer. My stack includes React, Next.js, TypeScript, Tailwind, Prisma and MongoDB. I'm open to full-time opportunities.",
-    icon: React.createElement(FaReact),
-    date: "2021 - present",
+      "In a dynamic, fast-paced work environment, I consistently maintained high standards in my projects and took on leadership roles by mentoring junior colleagues. My active participation in solution discussions and conducting detailed code reviews helped enhance team collaboration and ensured the delivery of high-quality work.",
+    icon: React.createElement(FaBriefcase),
+    date: "Feb 2020 - Jul 2024",
+  },
+  {
+    title: "Senior Software Engineer",
+    company: "CodeGen International",
+    location: "Colombo, Sri Lanka",
+    description:
+      "In my role, I collaborated with cross-functional teams to develop full-stack B2B and B2C applications for the travel industry, utilizing Angular 7, HTML, CSS, and Java/Spring. I improved search functionality with an Elasticsearch-based engine and enhanced performance with a NoSQL data cache. My work also involved streamlining deployments through CI/CD pipelines using GIT, Docker, and Kubernetes.",
+    icon: React.createElement(FaBriefcase),
+    date: "Apr 2018 - Feb 2020",
+  },
+  {
+    title: "Software Engineer",
+    company: "CodeGen International",
+    location: "Colombo, Sri Lanka",
+    description:
+      "Part of a team that achieved the shortest Project Go-Live in Codegen history, successfully developing a custom travel industry software solution from scratch in just three months. Replaced the legacy JavaScript front-end with Angular 7, resulting in over 50% faster loading times and enhanced efficiency",
+    icon: React.createElement(FaBriefcase),
+    date: "Apr 2016 - Apr 2018",
+  },
+  {
+    title: "Google Summer of Code Intern",
+    company: "CodeGen International",
+    location: "Stockholm, Sweden",
+    description:
+      "Implementing off-line Android mobile client for INCF's EEG Database",
+    icon: React.createElement(FaBriefcase),
+    date: "Apr 2015 - Nov 2015",
+  },
+  {
+    title: "Software Engineering Intern",
+    company: "Eyepax IT Consulting (Pvt) Ltd.",
+    location: "Colombo, Sri Lanka",
+    description:
+      "JAVA and Android Development for a pre-school mobile application called OAC Connect",
+    icon: React.createElement(FaBriefcase),
+    date: "Oct 2014 - Apr 2015",
+  },
+  {
+    title: "Bachelor of Science in Computer Science",
+    company: "University of Moratuwa",
+    location: "Colombo, Sri Lanka",
+    description: "Grade: Second Class Upper with Overall GPA 3.48/4.2",
+    icon: React.createElement(FaGraduationCap),
+    date: "2011 - 2015",
   },
 ] as const;
 
