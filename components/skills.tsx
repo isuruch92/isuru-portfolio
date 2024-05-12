@@ -3,10 +3,10 @@
 import React from "react";
 import SectionHeading from "./SectionHeading";
 import { motion } from "framer-motion";
-import { Tooltip } from "react-tooltip";
+import ReactFlipCard from "reactjs-flip-card";
 import Image from "next/image";
 import useSectionInView from "@/hooks/useSectionInView";
-import { skillsData } from "@/lib/data";
+import { categorizedSkillsData } from "@/lib/data";
 
 const fadeInAnimationVariants = {
   initial: {
@@ -25,60 +25,102 @@ const fadeInAnimationVariants = {
 export default function Skills() {
   const { ref } = useSectionInView("Skills");
 
+  const styles = {
+    card: {
+      background: "#fefefe",
+      color: "#1b1b1b",
+      borderRadius: 4,
+      display: "flex",
+      alignItems: "center",
+      justifyContent: "center",
+    },
+  };
+
   return (
     <section
       id="skills"
       ref={ref}
-      className="mb-28 max-w-[48rem] scroll-mt-32 text-center sm:mb-40"
+      className="mb-28 max-w-[52rem] scroll-mt-32 text-center sm:mb-40"
     >
-      <SectionHeading>My skills</SectionHeading>
-      <Tooltip
-        className="transition duration-100"
-        id="my-tooltip"
-        opacity={1}
-        border="2px solid #aaaaaa"
-        style={{
-          backgroundColor: "rgb(57, 222, 248)",
-          color: "#000",
-          fontWeight: 600,
-          fontSize: "18px",
-          borderRadius: "12px",
-        }}
-      />
-      <ul className="flex flex-wrap justify-center gap-4 text-lg text-slate-800 mt-12">
-        {skillsData.map((skill, index) => (
-          <motion.div
-            key={index}
+      <SectionHeading>
+        My skills & Technologies I have worked with
+      </SectionHeading>
+
+      {categorizedSkillsData.map((category, idx) => (
+        <div key={category.category}>
+          <motion.h3
+            className="text-lg font-bold max-[500px]:text-left text-slate-700"
             variants={fadeInAnimationVariants}
             initial="initial"
             whileInView="animate"
             viewport={{
               once: true,
             }}
-            custom={index}
+            custom={idx}
           >
-            <li
-              className="bg-slate-50 shadow-lg rounded-xl m-auto w-16 h-16 flex justify-center items-center 
-              hover:shadow-2xlhover:bg-slate-100 hover:scale-[1.15] hover:rotate-2 
-              cursor-pointer border border-slate-300 transition duration-300"
-              data-tooltip-id="my-tooltip"
-              data-tooltip-content={skill.name}
-              data-tooltip-place="top"
-            >
-              <Image
-                src={`/logos/${skill.id}.${skill.ext}`}
-                object-fit="cover"
-                alt="product logo"
-                quality={99}
-                priority={true}
-                className="rounded-xl"
-                width={64}
-                height={64}
-              />
-            </li>
-          </motion.div>
-        ))}
-      </ul>
+            {category.category}
+          </motion.h3>
+          <ul className="flex flex-wrap max-[500px]:justify-start justify-center gap-4 text-lg text-slate-800 mt-6 mb-6">
+            {category.skills.map((skill, index) => (
+              <motion.div
+                key={index}
+                variants={fadeInAnimationVariants}
+                initial="initial"
+                whileInView="animate"
+                viewport={{
+                  once: true,
+                }}
+                custom={index}
+                className="shadow-md"
+              >
+                <ReactFlipCard
+                  containerStyle={{ width: 100, height: 100 }}
+                  frontStyle={styles.card}
+                  backStyle={styles.card}
+                  frontComponent={
+                    <Image
+                      src={
+                        skill.isLocalAsset
+                          ? `/logos/${skill.id}.${skill.ext}`
+                          : `https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/${
+                              skill.id
+                            }/${skill.id}-${
+                              skill.isPlain
+                                ? "plain"
+                                : skill.isPlainWordmark
+                                ? "plain-wordmark"
+                                : skill.isOriginalWordMark
+                                ? "original-wordmark"
+                                : "original"
+                            }.svg`
+                      }
+                      alt={skill.name}
+                      width={86}
+                      height={86}
+                      quality={99}
+                      priority={true}
+                    />
+                  }
+                  backComponent={
+                    <div className="flex flex-col">
+                      <div
+                        className={
+                          skill.isSmallFont ? "text-xs font-bold" : "font-bold"
+                        }
+                      >
+                        {skill.name}
+                      </div>
+                      {skill.version && (
+                        <div className="text-xs font-bold">{skill.version}</div>
+                      )}
+                    </div>
+                  }
+                />
+              </motion.div>
+            ))}
+          </ul>
+        </div>
+      ))}
     </section>
   );
 }
