@@ -34,7 +34,7 @@ export default function Intro() {
             alt="Isuru avatar"
             quality={95}
             priority={true}
-            className="h-50 w-50 rounded-full relative border-[0.35rem] border-blue-300 shadow-xl"
+            className="h-50 w-50 rounded-full relative border-[0.35rem] border-[#00a7ff] shadow-xl"
           />
         </motion.div>
       </div>

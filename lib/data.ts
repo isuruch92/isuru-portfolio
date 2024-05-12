@@ -47,7 +47,7 @@ export const experiencesData = [
     company: "Matific",
     location: "Remote",
     description:
-      "As a Senior Software Engineer at Matific, I led the development of essential features for the teacher and parent management platforms, enhancing user experience across devices with Angular 14 components. I optimized workflows using AWS, GitHub, Jira, and other technologies, significantly improving SEO rankings and application performance. My role also included mentoring new engineers and ensuring strategic alignment with company stakeholders.",
+      "As a Senior Software Engineer at Matific, I led the development of essential features for the teacher and parent management platforms, enhancing user experience across devices with Angular 14 components. My role also included optimizing development processes using AWS, GitHub, PostgreSQL, integrating Python APIs, mentoring new engineers, and ensuring strategic communication with stakeholders for project success.",
     icon: React.createElement(FaBriefcase),
     date: "Jul 2020 - Mar 2024",
   },
@@ -80,7 +80,7 @@ export const experiencesData = [
   },
   {
     title: "Google Summer of Code Intern",
-    company: "CodeGen International",
+    company: "International Neuroinformatics Coordinating Facility (INCF)",
     location: "Stockholm, Sweden",
     description:
       "Implementing off-line Android mobile client for INCF's EEG Database",
