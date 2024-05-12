@@ -74,26 +74,30 @@ export default function ExperienceItem({
       </span>
 
       <p className="!mt-1 !font-normal !text-slate-700 dark:text-white/75 !text-sm max-[500px]:!text-[0.813rem] text-justify">
-        {item.description.length > 205 && !isExpanded ? (
-          <React.Fragment>
-            {item.description.substring(0, 202)}...
-            <button
-              onClick={handleSeeMoreClick}
-              className="text-blue-500 hover:text-blue-700"
-            >
-              See more
-            </button>
-          </React.Fragment>
+        {item.description.length > 205 ? (
+          !isExpanded ? (
+            <React.Fragment>
+              {item.description.substring(0, 202)}...
+              <button
+                onClick={handleSeeMoreClick}
+                className="text-blue-500 hover:text-blue-700"
+              >
+                See more
+              </button>
+            </React.Fragment>
+          ) : (
+            <React.Fragment>
+              {item.description}
+              <button
+                onClick={handleSeeMoreClick}
+                className="text-blue-500 hover:text-blue-700"
+              >
+                &nbsp; See less
+              </button>
+            </React.Fragment>
+          )
         ) : (
-          <React.Fragment>
-            {item.description}
-            <button
-              onClick={handleSeeMoreClick}
-              className="text-blue-500 hover:text-blue-700"
-            >
-              &nbsp; See less
-            </button>
-          </React.Fragment>
+          <span>{item.description}</span>
         )}
       </p>
     </VerticalTimelineElement>

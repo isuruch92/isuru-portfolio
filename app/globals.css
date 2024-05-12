@@ -6,6 +6,29 @@ html {
   --line-color: #00a7ff;
 }
 
+@keyframes mouse-wheel {
+  0% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+  100% {
+    opacity: 0.2;
+    transform: translateY(16px);
+  }
+}
+
+@keyframes mouse-scroll {
+  0% {
+    opacity: 0;
+  }
+  50% {
+    opacity: 0.5;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
 .timeline-date {
   @media (max-width: 639px) {
     padding-bottom: 0 !important;
