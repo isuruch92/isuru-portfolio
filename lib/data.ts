@@ -38,7 +38,7 @@ export const experiencesData = [
     company: "Digia Oy",
     location: "Tampere, Finland",
     description:
-      "At Digia, I develop sophisticated financial system software, leveraging a robust tech stack including .NET Framework, Visual Studio, C#, Visual Basic .NET, Angular, JavaScript, and jQuery. My role focuses on delivering high-quality, reliable solutions that drive business efficiency and growth.",
+      "At Digia, I collaborate with a talented team to develop sophisticated financial system software, leveraging a robust tech stack including .NET Framework, Visual Studio, C#, Visual Basic .NET, Angular, JavaScript, and jQuery. Beyond coding, I actively participate in code reviews and ensure my solutions are well-documented. Digia’s relaxed and flexible work environment supports a great work-life balance, allowing me to focus on delivering high-quality, reliable solutions that enhance business efficiency and growth.",
     icon: React.createElement(FaBriefcase),
     date: "Mar 2024 - Present",
   },
@@ -129,110 +129,6 @@ export const projectsData = [
     imageUrl: p3,
   },
 ] as const;
-
-// export const categorizedSkillsData = [
-//   {
-//     category: "Programming Languages",
-//     skills: [
-//       { name: "JavaScript", id: "javascript", ext: "png", version: "ES6" },
-//       { name: "TypeScript", id: "typescript", ext: "png", version: "v5+" },
-//       { name: "Java", id: "java", ext: "png" },
-//       { name: "Python", id: "python", ext: "png" },
-//       { name: "C#", id: "csharp", ext: "svg" },
-//       { name: "VB.NET", id: "visualbasic", ext: "png" },
-//     ],
-//   },
-//   {
-//     category: "Markup and Style Sheet Languages",
-//     skills: [
-//       { name: "HTML 5", id: "html5", ext: "png" },
-//       { name: "CSS 3", id: "css3", ext: "png" },
-//       { name: "SCSS", id: "sass", ext: "png" },
-//       { name: "LESS", id: "less", ext: "png", isPlainWordmark: true },
-//     ],
-//   },
-//   {
-//     category: "Web Frameworks",
-//     skills: [
-//       { name: "React", id: "react", ext: "svg", version: "v18+" },
-//       { name: "Next.js", id: "nextjs", ext: "png", version: "v14+" },
-//       { name: "Angular", id: "angular", ext: "svg", version: "v16" },
-//       { name: "Django", id: "django", ext: "png", isPlain: true },
-//     ],
-//   },
-//   {
-//     category: "Libraries and Other Frameworks",
-//     skills: [
-//       { name: "Redux", id: "redux", ext: "svg" },
-//       { name: "RxJS", id: "rxjs", ext: "svg" },
-//       { name: "jQuery", id: "jquery", ext: "png" },
-//       { name: "Tailwind", id: "tailwindcss", ext: "svg" },
-//       { name: "Framer Motion", id: "framermotion", ext: "svg", version: "v11" },
-//       {
-//         name: "Styled Components",
-//         id: "styledcomponents",
-//         ext: "svg",
-//         isLocalAsset: true,
-//         isSmallFont: true,
-//       },
-//       {
-//         name: "React-Query",
-//         id: "react-query",
-//         ext: "svg",
-//         isLocalAsset: true,
-//       },
-//     ],
-//   },
-//   {
-//     category: "Databases",
-//     skills: [
-//       { name: "MySQL", id: "mysql", ext: "png" },
-//       { name: "PostgreSQL", id: "postgresql", ext: "png", isSmallFont: true },
-//       { name: "MongoDB", id: "mongodb", ext: "svg" },
-//       {
-//         name: "ElasticSearch",
-//         id: "elasticsearch",
-//         ext: "svg",
-//         isSmallFont: true,
-//       },
-//     ],
-//   },
-//   {
-//     category: "Development Tools",
-//     skills: [
-//       { name: "Git", id: "git", ext: "svg" },
-//       { name: "GitHub", id: "github", ext: "svg" },
-//       { name: "GitLab", id: "gitlab", ext: "svg" },
-//       { name: "Docker", id: "docker", ext: "svg" },
-//       { name: "Visual Studio", id: "visualstudio", ext: "png" },
-//       { name: "VS Code", id: "vscode", ext: "svg" },
-//       { name: "Intellij IDEA", id: "intellij", ext: "svg" },
-//       { name: "PyCharm", id: "pycharm", ext: "svg" },
-//       { name: "Webstorm", id: "webstorm", ext: "svg" },
-//     ],
-//   },
-//   {
-//     category: "DevOps and Project Management",
-//     skills: [
-//       { name: "JIRA", id: "jira", ext: "png" },
-//       { name: "Jenkins", id: "jenkins", ext: "png" },
-//     ],
-//   },
-//   {
-//     category: "Cloud and Infrastructure",
-//     skills: [
-//       {
-//         name: "AWS S3, EC2, Lambda, Cloudfront, RDS",
-//         id: "amazonwebservices",
-//         ext: "svg",
-//         isOriginalWordMark: true,
-//         isSmallFont: true,
-//       },
-//       { name: "Supabase", id: "supabase", ext: "svg" },
-//       { name: "Vercel", id: "vercel", ext: "svg" },
-//     ],
-//   },
-// ] as const;
 
 export const categorizedSkillsData = [
   {
@@ -441,10 +337,10 @@ export const categorizedSkillsData = [
         isPlain: false,
       },
       {
-        name: "Tailwind",
+        name: "Tailwind CSS",
         id: "tailwindcss",
         ext: "svg",
-        version: null,
+        version: "v3.4.3",
         isPlainWordmark: false,
         isOriginalWordMark: false,
         isLocalAsset: false,

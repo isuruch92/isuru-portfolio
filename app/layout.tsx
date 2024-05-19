@@ -1,13 +1,16 @@
 import "./globals.css";
-import { Inter } from "next/font/google";
+import { Open_Sans } from "next/font/google";
 import Header from "@/components/Header";
 import { ActiveSectionProvider } from "@/context/active-section-context";
 
-const inter = Inter({ subsets: ["latin"] });
+const roboto = Open_Sans({
+  weight: ["400", "500", "600", "700", "800"],
+  subsets: ["latin"],
+});
 
 export const metadata = {
   title: "Isuru | Personal Portfolio",
-  description: "Isuru is a fullstack developer with 8+ years of experience",
+  description: "Isuru is a fullstack developer with 7+ years of experience",
 };
 
 export default function RootLayout({
@@ -18,7 +21,7 @@ export default function RootLayout({
   return (
     <html lang="en" className="!scroll-smooth">
       <body
-        className={`${inter.className} bg-slate-200 text-slate-950 relative h-[5000px] pt-28 sm:pt-36`}
+        className={`${roboto.className} bg-slate-200 text-slate-950 relative h-[5000px] pt-28 mdx1:pt-36`}
       >
         <div className="bg-[#d2edf6] absolute top-[-6rem] right-[11rem] h-[31.25rem] w-[31.25rem] rounded-full blur-[10rem] sm:w-[68.75rem] -z-10"></div>
         <div

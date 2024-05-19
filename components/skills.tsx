@@ -42,9 +42,7 @@ export default function Skills() {
       ref={ref}
       className="mb-28 max-w-[52rem] scroll-mt-32 text-center sm:mb-40"
     >
-      <SectionHeading>
-        My skills & Technologies I have worked with
-      </SectionHeading>
+      <SectionHeading>My skills & Technologies I have mastered</SectionHeading>
 
       {categorizedSkillsData.map((category, idx) => (
         <div key={category.category}>
