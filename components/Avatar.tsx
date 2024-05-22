@@ -7,7 +7,10 @@ import { motion } from "framer-motion";
 export default function Avatar() {
   return (
     <motion.div
-      className="h-52 w-52 smx2:h-60 smx2:w-60 smx1:h-80 smx1:w-80 rounded-full relative"
+      className="h-60 w-60 
+      smx2:h-72 smx2:w-72 
+      smx1:h-96 smx1:w-96 
+      relative"
       initial={{ opacity: 0, scale: 0 }}
       animate={{ opacity: 1, scale: 1 }}
       transition={{
@@ -21,7 +24,9 @@ export default function Avatar() {
         alt="Isuru avatar"
         quality={95}
         priority={true}
-        className="h-72 w-72 smx1:h-96 smx1:w-96 rounded-full relative border-[0.35rem] border-[#00a7ff] shadow-xl"
+        className="h-72 w-72 
+        smx1:h-96 smx1:w-96
+        relative"
       />
     </motion.div>
   );
