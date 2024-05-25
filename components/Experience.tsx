@@ -12,7 +12,7 @@ import Observer from "./Observer";
 import ExperienceItem from "./ExperienceItem";
 
 export default function Experience() {
-  const { ref, inView } = useSectionInView("Experience", 0.5);
+  const { ref, inView } = useSectionInView("Experience", 0.4);
   const { theme } = { theme: "light" };
 
   const [hasAnimated, setHasAnimated] = useState(
