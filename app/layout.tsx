@@ -2,6 +2,7 @@ import "./globals.css";
 import { Open_Sans } from "next/font/google";
 import Header from "@/components/Header";
 import { ActiveSectionProvider } from "@/context/active-section-context";
+import { Toaster } from "react-hot-toast";
 
 const roboto = Open_Sans({
   weight: ["400", "500", "600", "700", "800"],
@@ -32,6 +33,8 @@ export default function RootLayout({
         <ActiveSectionProvider>
           <Header />
           {children}
+
+          <Toaster position="bottom-center" />
         </ActiveSectionProvider>
       </body>
     </html>
