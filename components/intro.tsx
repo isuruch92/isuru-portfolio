@@ -39,7 +39,7 @@ export default function Intro() {
             with&nbsp;
             <span className="font-bold text-amber-600">8+ years</span> of
             experience building{" "}
-            <span className="italic text-slate-600">
+            <span className="italic text-[#1c948d] dark:text-[#00fff7]">
               intuitive & responsive
             </span>{" "}
             web platforms. Proficient in{" "}

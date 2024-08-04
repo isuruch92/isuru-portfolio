@@ -91,7 +91,8 @@ export default function Skills() {
                   frontComponent={
                     <Image
                       src={
-                        skill.isLocalAsset
+                        skill.isLocalAsset ||
+                        (theme === "dark" && skill.isDarkModeLocalAsset)
                           ? `/logos/${skill.id}.${skill.ext}`
                           : `https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/${
                               skill.id
