@@ -144,6 +144,7 @@ export const categorizedSkillsData = [
         isLocalAsset: false,
         isSmallFont: false,
         isPlain: false,
+        isDarkModePlain: false,
       },
       {
         name: "TypeScript",
@@ -155,6 +156,7 @@ export const categorizedSkillsData = [
         isLocalAsset: false,
         isSmallFont: false,
         isPlain: false,
+        isDarkModePlain: false,
       },
       {
         name: "Java",
@@ -166,6 +168,7 @@ export const categorizedSkillsData = [
         isLocalAsset: false,
         isSmallFont: false,
         isPlain: false,
+        isDarkModePlain: false,
       },
       {
         name: "Python",
@@ -177,6 +180,7 @@ export const categorizedSkillsData = [
         isLocalAsset: false,
         isSmallFont: false,
         isPlain: false,
+        isDarkModePlain: false,
       },
       {
         name: "C#",
@@ -188,6 +192,7 @@ export const categorizedSkillsData = [
         isLocalAsset: false,
         isSmallFont: false,
         isPlain: false,
+        isDarkModePlain: false,
       },
       {
         name: "VB.NET",
@@ -199,6 +204,7 @@ export const categorizedSkillsData = [
         isLocalAsset: false,
         isSmallFont: false,
         isPlain: false,
+        isDarkModePlain: false,
       },
     ],
   },
@@ -215,6 +221,7 @@ export const categorizedSkillsData = [
         isLocalAsset: false,
         isSmallFont: false,
         isPlain: false,
+        isDarkModePlain: false,
       },
       {
         name: "CSS 3",
@@ -226,6 +233,7 @@ export const categorizedSkillsData = [
         isLocalAsset: false,
         isSmallFont: false,
         isPlain: false,
+        isDarkModePlain: false,
       },
       {
         name: "SCSS",
@@ -237,6 +245,7 @@ export const categorizedSkillsData = [
         isLocalAsset: false,
         isSmallFont: false,
         isPlain: false,
+        isDarkModePlain: false,
       },
       {
         name: "LESS",
@@ -248,6 +257,7 @@ export const categorizedSkillsData = [
         isLocalAsset: false,
         isSmallFont: false,
         isPlain: false,
+        isDarkModePlain: false,
       },
     ],
   },
@@ -264,6 +274,7 @@ export const categorizedSkillsData = [
         isLocalAsset: false,
         isSmallFont: false,
         isPlain: false,
+        isDarkModePlain: false,
       },
       {
         name: "Next.js",
@@ -275,6 +286,7 @@ export const categorizedSkillsData = [
         isLocalAsset: false,
         isSmallFont: false,
         isPlain: false,
+        isDarkModePlain: false,
       },
       {
         name: "Angular",
@@ -286,6 +298,7 @@ export const categorizedSkillsData = [
         isLocalAsset: false,
         isSmallFont: false,
         isPlain: false,
+        isDarkModePlain: false,
       },
       {
         name: "Django",
@@ -297,6 +310,7 @@ export const categorizedSkillsData = [
         isLocalAsset: false,
         isSmallFont: false,
         isPlain: true,
+        isDarkModePlain: false,
       },
     ],
   },
@@ -313,6 +327,7 @@ export const categorizedSkillsData = [
         isLocalAsset: false,
         isSmallFont: false,
         isPlain: false,
+        isDarkModePlain: false,
       },
       {
         name: "RxJS",
@@ -324,6 +339,7 @@ export const categorizedSkillsData = [
         isLocalAsset: false,
         isSmallFont: false,
         isPlain: false,
+        isDarkModePlain: false,
       },
       {
         name: "jQuery",
@@ -335,6 +351,7 @@ export const categorizedSkillsData = [
         isLocalAsset: false,
         isSmallFont: false,
         isPlain: false,
+        isDarkModePlain: false,
       },
       {
         name: "Tailwind CSS",
@@ -346,6 +363,7 @@ export const categorizedSkillsData = [
         isLocalAsset: false,
         isSmallFont: false,
         isPlain: false,
+        isDarkModePlain: false,
       },
       {
         name: "Framer Motion",
@@ -357,6 +375,7 @@ export const categorizedSkillsData = [
         isLocalAsset: false,
         isSmallFont: false,
         isPlain: false,
+        isDarkModePlain: false,
       },
       {
         name: "Styled Components",
@@ -368,6 +387,7 @@ export const categorizedSkillsData = [
         isLocalAsset: true,
         isSmallFont: true,
         isPlain: false,
+        isDarkModePlain: false,
       },
       {
         name: "React-Query",
@@ -379,6 +399,7 @@ export const categorizedSkillsData = [
         isLocalAsset: true,
         isSmallFont: false,
         isPlain: false,
+        isDarkModePlain: false,
       },
     ],
   },
@@ -395,6 +416,7 @@ export const categorizedSkillsData = [
         isLocalAsset: false,
         isSmallFont: false,
         isPlain: false,
+        isDarkModePlain: false,
       },
       {
         name: "PostgreSQL",
@@ -406,6 +428,7 @@ export const categorizedSkillsData = [
         isLocalAsset: false,
         isSmallFont: true,
         isPlain: false,
+        isDarkModePlain: false,
       },
       {
         name: "MongoDB",
@@ -417,6 +440,7 @@ export const categorizedSkillsData = [
         isLocalAsset: false,
         isSmallFont: false,
         isPlain: false,
+        isDarkModePlain: false,
       },
       {
         name: "ElasticSearch",
@@ -428,11 +452,12 @@ export const categorizedSkillsData = [
         isLocalAsset: false,
         isSmallFont: true,
         isPlain: false,
+        isDarkModePlain: false,
       },
     ],
   },
   {
-    category: "Development Tools",
+    category: "Version Control & Development Tools",
     skills: [
       {
         name: "Git",
@@ -444,6 +469,7 @@ export const categorizedSkillsData = [
         isLocalAsset: false,
         isSmallFont: false,
         isPlain: false,
+        isDarkModePlain: false,
       },
       {
         name: "GitHub",
@@ -455,6 +481,7 @@ export const categorizedSkillsData = [
         isLocalAsset: false,
         isSmallFont: false,
         isPlain: false,
+        isDarkModePlain: false,
       },
       {
         name: "GitLab",
@@ -466,40 +493,9 @@ export const categorizedSkillsData = [
         isLocalAsset: false,
         isSmallFont: false,
         isPlain: false,
+        isDarkModePlain: false,
       },
-      {
-        name: "Docker",
-        id: "docker",
-        ext: "svg",
-        version: null,
-        isPlainWordmark: false,
-        isOriginalWordMark: false,
-        isLocalAsset: false,
-        isSmallFont: false,
-        isPlain: false,
-      },
-      {
-        name: "Visual Studio",
-        id: "visualstudio",
-        ext: "png",
-        version: null,
-        isPlainWordmark: false,
-        isOriginalWordMark: false,
-        isLocalAsset: false,
-        isSmallFont: false,
-        isPlain: false,
-      },
-      {
-        name: "VS Code",
-        id: "vscode",
-        ext: "svg",
-        version: null,
-        isPlainWordmark: false,
-        isOriginalWordMark: false,
-        isLocalAsset: false,
-        isSmallFont: false,
-        isPlain: false,
-      },
+
       {
         name: "Intellij IDEA",
         id: "intellij",
@@ -510,6 +506,7 @@ export const categorizedSkillsData = [
         isLocalAsset: false,
         isSmallFont: false,
         isPlain: false,
+        isDarkModePlain: false,
       },
       {
         name: "PyCharm",
@@ -521,6 +518,7 @@ export const categorizedSkillsData = [
         isLocalAsset: false,
         isSmallFont: false,
         isPlain: false,
+        isDarkModePlain: false,
       },
       {
         name: "Webstorm",
@@ -532,12 +530,49 @@ export const categorizedSkillsData = [
         isLocalAsset: false,
         isSmallFont: false,
         isPlain: false,
+        isDarkModePlain: false,
+      },
+      {
+        name: "VS Code",
+        id: "vscode",
+        ext: "svg",
+        version: null,
+        isPlainWordmark: false,
+        isOriginalWordMark: false,
+        isLocalAsset: false,
+        isSmallFont: false,
+        isPlain: false,
+        isDarkModePlain: false,
+      },
+      {
+        name: "Visual Studio",
+        id: "visualstudio",
+        ext: "png",
+        version: null,
+        isPlainWordmark: false,
+        isOriginalWordMark: false,
+        isLocalAsset: false,
+        isSmallFont: false,
+        isPlain: false,
+        isDarkModePlain: false,
       },
     ],
   },
   {
     category: "DevOps and Project Management",
     skills: [
+      {
+        name: "Docker",
+        id: "docker",
+        ext: "svg",
+        version: null,
+        isPlainWordmark: false,
+        isOriginalWordMark: false,
+        isLocalAsset: false,
+        isSmallFont: false,
+        isPlain: false,
+        isDarkModePlain: false,
+      },
       {
         name: "JIRA",
         id: "jira",
@@ -548,6 +583,7 @@ export const categorizedSkillsData = [
         isLocalAsset: false,
         isSmallFont: false,
         isPlain: false,
+        isDarkModePlain: false,
       },
       {
         name: "Jenkins",
@@ -559,6 +595,7 @@ export const categorizedSkillsData = [
         isLocalAsset: false,
         isSmallFont: false,
         isPlain: false,
+        isDarkModePlain: false,
       },
     ],
   },
@@ -575,6 +612,7 @@ export const categorizedSkillsData = [
         isLocalAsset: false,
         isSmallFont: true,
         isPlain: false,
+        isDarkModePlain: true,
       },
       {
         name: "Supabase",
@@ -586,6 +624,7 @@ export const categorizedSkillsData = [
         isLocalAsset: false,
         isSmallFont: false,
         isPlain: false,
+        isDarkModePlain: false,
       },
       {
         name: "Vercel",
@@ -597,6 +636,7 @@ export const categorizedSkillsData = [
         isLocalAsset: false,
         isSmallFont: false,
         isPlain: false,
+        isDarkModePlain: false,
       },
     ],
   },

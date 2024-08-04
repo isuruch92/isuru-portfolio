@@ -33,7 +33,7 @@ export default function HeroCTA() {
 
       <a
         className="group bg-white px-7 py-3 flex items-center gap-2 rounded-full outline-none shadow-lg 
-        buttonInteractive transition cursor-pointer borderBlack"
+        buttonInteractive transition cursor-pointer borderBlack dark:bg-white/20"
         href="/CV.pdf"
         download={true}
       >
@@ -44,7 +44,7 @@ export default function HeroCTA() {
       <div className="flex flex-row gap-4">
         <a
           className="w-[54px] h-[54px] flex items-center justify-center bg-white text-[#0077B5] p-4 gap-2 rounded-full shadow-lg
-focus:scale-[1.15] hover:scale-[1.15] active:scale-105 transition cursor-pointer borderBlack"
+focus:scale-[1.15] hover:scale-[1.15] active:scale-105 transition cursor-pointer borderBlack dark:bg-white/20 dark:text-white/90"
           href="https://www.linkedin.com/in/isuruc/"
           target="_blank"
         >
@@ -53,7 +53,7 @@ focus:scale-[1.15] hover:scale-[1.15] active:scale-105 transition cursor-pointer
 
         <a
           className="w-[54px] h-[54px] flex items-center bg-white text-slate-700 text-[1.35rem] p-4 gap-2 rounded-full shadow-lg 
-focus:scale-[1.15] hover:scale-[1.15] active:scale-105 transition cursor-pointer borderBlack"
+focus:scale-[1.15] hover:scale-[1.15] active:scale-105 transition cursor-pointer borderBlack dark:bg-white/20 dark:text-white/90"
           href="https://github.com/isuruch92"
           target="_blank"
         >

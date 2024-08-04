@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import { VerticalTimelineElement } from "react-vertical-timeline-component";
 import { experiencesData } from "@/lib/data";
+import { useTheme } from "@/context/theme-context";
 
 interface ExperienceItemProps {
   item: (typeof experiencesData)[number];
@@ -13,7 +14,7 @@ export default function ExperienceItem({
   hasAnimated,
   index,
 }: ExperienceItemProps) {
-  const { theme } = { theme: "light" };
+  const { theme } = useTheme();
 
   const [isExpanded, setIsExpanded] = useState(false);
 
@@ -55,6 +56,8 @@ export default function ExperienceItem({
             ? index === 0
               ? "#00a7ff"
               : "#e1dfdf"
+            : index === 0
+            ? "#00a7ff"
             : "rgba(255, 255, 255, 0.15)",
         fontSize: "1.5rem",
       }}
@@ -65,15 +68,15 @@ export default function ExperienceItem({
       <h3 className="font-semibold capitalize sm:!text-xl">{item.title}</h3>
 
       <span className="flex items-center justify-between max-[500px]:items-start max-[500px]:flex-col flex-wrap">
-        <p className="font-normal !mt-0 sm:!text-lg !text-slate-800">
+        <p className="font-normal !mt-0 sm:!text-lg !text-slate-800 dark:!text-white">
           {item.company}
         </p>
-        <p className="font-normal !mt-0 italic !text-slate-600">
+        <p className="font-normal !mt-0 italic !text-slate-600 dark:!text-white/80">
           {item.location}
         </p>
       </span>
 
-      <p className="!mt-1 !font-normal !text-slate-700 dark:text-white/75 !text-sm max-[500px]:!text-[0.813rem] text-justify">
+      <p className="!mt-1 !font-normal !text-slate-700 dark:!text-white/70 !text-sm max-[500px]:!text-[0.813rem] text-justify">
         {item.description.length > 205 ? (
           !isExpanded ? (
             <React.Fragment>

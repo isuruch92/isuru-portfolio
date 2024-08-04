@@ -51,13 +51,22 @@ export default function SectionDivider() {
       transition={{ delay: 0.125 }}
     >
       <div>
-        <div style={styles.mouse}>
-          <div style={styles.wheel}></div>
+        <div style={styles.mouse} className="dark:!border-white/80">
+          <div style={styles.wheel} className="dark:!bg-white/80"></div>
         </div>
         <div>
-          <span style={{ ...styles.span, ...styles.unu }}></span>
-          <span style={{ ...styles.span, ...styles.doi }}></span>
-          <span style={{ ...styles.span, ...styles.trei }}></span>
+          <span
+            style={{ ...styles.span, ...styles.unu }}
+            className="dark:!border-r-white/80 dark:!border-b-white/80"
+          ></span>
+          <span
+            style={{ ...styles.span, ...styles.doi }}
+            className="dark:!border-r-white/80 dark:!border-b-white/80"
+          ></span>
+          <span
+            style={{ ...styles.span, ...styles.trei }}
+            className="dark:!border-r-white/80 dark:!border-b-white/80"
+          ></span>
         </div>
       </div>
     </motion.div>

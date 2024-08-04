@@ -7,6 +7,7 @@ import ReactFlipCard from "reactjs-flip-card";
 import Image from "next/image";
 import useSectionInView from "@/hooks/useSectionInView";
 import { categorizedSkillsData } from "@/lib/data";
+import { useTheme } from "@/context/theme-context";
 
 const fadeInAnimationVariants = {
   initial: {
@@ -24,11 +25,10 @@ const fadeInAnimationVariants = {
 
 export default function Skills() {
   const { ref } = useSectionInView("Skills", 0.45);
+  const { theme } = useTheme();
 
-  const styles = {
+  let styles = {
     card: {
-      background: "#fefefe",
-      color: "#1b1b1b",
       borderRadius: 4,
       display: "flex",
       alignItems: "center",
@@ -47,7 +47,7 @@ export default function Skills() {
       {categorizedSkillsData.map((category, idx) => (
         <div key={category.category}>
           <motion.h3
-            className="text-lg font-bold max-[500px]:text-left text-slate-700"
+            className="text-lg font-bold max-[500px]:text-left text-slate-700 dark:text-white/70"
             variants={fadeInAnimationVariants}
             initial="initial"
             whileInView="animate"
@@ -69,12 +69,25 @@ export default function Skills() {
                   once: true,
                 }}
                 custom={index}
-                className="shadow-md"
               >
                 <ReactFlipCard
                   containerStyle={{ width: 100, height: 100 }}
-                  frontStyle={styles.card}
-                  backStyle={styles.card}
+                  frontStyle={{
+                    ...styles.card,
+                    background:
+                      theme === "light"
+                        ? "#fefefe"
+                        : "rgba(150, 150, 150, 0.2)",
+                    color: theme === "light" ? "#1b1b1b" : "#FFF",
+                  }}
+                  backStyle={{
+                    ...styles.card,
+                    background:
+                      theme === "light"
+                        ? "#fefefe"
+                        : "rgba(150, 150, 150, 0.2)",
+                    color: theme === "light" ? "#1b1b1b" : "#FFF",
+                  }}
                   frontComponent={
                     <Image
                       src={
@@ -83,7 +96,9 @@ export default function Skills() {
                           : `https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/${
                               skill.id
                             }/${skill.id}-${
-                              skill.isPlain
+                              theme === "dark" && skill.isDarkModePlain
+                                ? "plain-wordmark"
+                                : skill.isPlain
                                 ? "plain"
                                 : skill.isPlainWordmark
                                 ? "plain-wordmark"
