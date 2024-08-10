@@ -12,37 +12,41 @@ export default function About() {
     <motion.section
       id="about"
       ref={ref}
-      className="mb-28 max-w-[45rem] text-center leading-8 sm:mb-40 scroll-mt-32"
+      className="mb-28 max-w-[48rem] text-center leading-8 sm:mb-40 scroll-mt-32"
       initial={{ opacity: 0, y: 100 }}
       animate={{ opacity: 1, y: 0 }}
       transition={{ delay: 0.175 }}
     >
       <SectionHeading>About me</SectionHeading>
       <p className="mb-3">
-        After graduating with a degree in{" "}
-        <span className="font-medium">Accounting</span>, I decided to pursue my
-        passion for programming. I enrolled in a coding bootcamp and learned{" "}
-        <span className="font-medium">full-stack web development</span>.{" "}
-        <span className="italic">My favorite part of programming</span> is the
-        problem-solving aspect. I <span className="underline">love</span> the
-        feeling of finally figuring out a solution to a problem. My core stack
-        is{" "}
-        <span className="font-medium">
-          React, Next.js, Node.js, and MongoDB
-        </span>
-        . I am also familiar with TypeScript and Prisma. I am always looking to
-        learn new technologies. I am currently looking for a{" "}
-        <span className="font-medium">full-time position</span> as a software
-        developer.
+        Hello! I&apos;m a dedicated software engineer with over 8 years of
+        experience in frontend development and full-stack solutions. I love
+        working with{" "}
+        <span className="underline">
+          React, Angular, JavaScript, TypeScript,
+        </span>{" "}
+        and <span className="underline">HTML/CSS</span> to craft intuitive and
+        user-friendly web interfaces.
       </p>
-
+      <p className="mb-3">
+        I find incredible satisfaction in seeing my creations come to life,
+        fueling my passion for frontend development. Beyond coding, I enjoy
+        conducting code reviews, mentoring newcomers, and communicating with
+        stakeholders. My adaptability, organizational skills, and reliability
+        help me tackle issues and contribute effectively to projects.
+      </p>
+      <p className="mb-3">
+        I thrive on solving complex challenges, learning new technologies, and
+        building strong relationships. Teamwork and clear communication are
+        central to my approach, whether collaborating within my team or with
+        other departments.
+      </p>
       <p>
-        <span className="italic">When I&apos;m not coding</span>, I enjoy
-        playing video games, watching movies, and playing with my dog. I also
-        enjoy <span className="font-medium">learning new things</span>. I am
-        currently learning about{" "}
-        <span className="font-medium">history and philosophy</span>. I&apos;m
-        also learning how to play the guitar.
+        Outside of work, I&apos;m passionate about traveling. Exploring new
+        destinations, immersing in different cultures, and drawing inspiration
+        from my journeys broaden my perspective and recharge my creativity.
+        Additionally, I enjoy building LEGO vehicle models and diving into video
+        games during my downtime.
       </p>
     </motion.section>
   );

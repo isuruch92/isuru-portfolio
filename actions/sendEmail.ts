@@ -23,8 +23,10 @@ export async function sendEmail(formData: FormData) {
     };
   }
 
+  let data;
+
   try {
-    await resend.emails.send({
+    data = await resend.emails.send({
       from: "Contact Form <onboarding@resend.dev>",
       to: "isuruch92@gmail.com",
       subject: "Message from portfolio contact form",
@@ -39,4 +41,8 @@ export async function sendEmail(formData: FormData) {
       error: getErrorMessage(error),
     };
   }
+
+  return {
+    data,
+  };
 }
