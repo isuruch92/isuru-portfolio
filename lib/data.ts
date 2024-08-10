@@ -108,10 +108,12 @@ export const experiencesData = [
 
 export const projectsData = [
   {
-    title: "CorpComment",
+    title: "Instant Pizzario",
     description:
-      "I worked as a full-stack developer on this startup project for 2 years. Users can give public feedback to companies.",
-    tags: ["React", "Next.js", "MongoDB", "Tailwind", "Prisma"],
+      "A simple pizza ordering webapp built with React, featuring data-fetching and form handling with React Router. It uses Redux Toolkit for state management, styled with Tailwind CSS, and hosted on Vercel.",
+    tags: ["React", "React Router", "Redux", "Tailwind", "Vercel"],
+    demoLink: "https://instant-pizzario.vercel.app/",
+    githubLink: "https://github.com/isuruch92/fast-react-pizza",
     imageUrl: p1,
   },
   {
@@ -120,13 +122,17 @@ export const projectsData = [
       "Job board for remote developer jobs. I was the front-end developer. It has features like filtering, sorting and pagination.",
     tags: ["React", "TypeScript", "Next.js", "Tailwind", "Redux"],
     imageUrl: p2,
+    demoLink: "https://instant-pizzario.vercel.app/",
+    githubLink: "https://github.com/isuruch92/fast-react-pizza",
   },
   {
-    title: "Word Analytics",
+    title: "Message Board",
     description:
-      "A public web app for quick analytics on text. It shows word count, character count and social media post limits.",
-    tags: ["React", "Next.js", "SQL", "Tailwind", "Framer"],
+      "A very simple message board application developed using a Node.js server and a React.js client. Uses React context API for state management and CSS modules for styles. Both server and client hosted on vercel.",
+    tags: ["React", "Node.js", "CSS"],
     imageUrl: p3,
+    demoLink: "https://message-board-client-one.vercel.app/app/",
+    githubLink: "https://github.com/isuruch92/message-board",
   },
 ] as const;
 

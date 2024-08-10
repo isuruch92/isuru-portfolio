@@ -4,6 +4,8 @@ import React, { useRef } from "react";
 import Image from "next/image";
 import { motion, useScroll, useTransform } from "framer-motion";
 import { projectsData } from "@/lib/data";
+import { FaEye } from "react-icons/fa6";
+import { FaGithub } from "react-icons/fa6";
 
 type ProjectProps = {
   project: (typeof projectsData)[number];
@@ -20,7 +22,11 @@ export default function Project({ project }: ProjectProps) {
   const scaleProgress = useTransform(scrollYProgress, [0, 1], [0.7, 1]);
   const opacityProgress = useTransform(scrollYProgress, [0, 1], [0.6, 1]);
 
-  const { title, description, tags, imageUrl } = project;
+  const { title, description, tags, imageUrl, demoLink, githubLink } = project;
+
+  const handleOpenLink = (url: string) => {
+    window.open(url, "_blank", "noopener,noreferrer");
+  };
 
   return (
     <motion.div
@@ -31,8 +37,8 @@ export default function Project({ project }: ProjectProps) {
       }}
       className="group mb-3 sm:mb-8 last:mb-0"
     >
-      <section className="bg-slate-50 max-w-[43rem] borderBlack rounded-lg overflow-hidden sm:pr-8 relative sm:h-[20rem] hover:shadow-2xl transition sm:group-even:pl-8 dark:text-white dark:bg-white/10 dark:hover:bg-white/20">
-        <div className="pt-4 pb-7 px-5 sm:pt-8 sm:pl-8 sm:pr-2 sm:max-w-[50%] flex flex-col h-full sm:group-even:ml-[18rem]">
+      <section className="bg-slate-50 max-w-[45rem] borderBlack rounded-lg overflow-hidden sm:pr-8 relative sm:h-[22rem] hover:shadow-2xl transition sm:group-even:pl-8 dark:text-white dark:bg-white/10 dark:hover:bg-white/20">
+        <div className="pt-4 pb-7 px-5 sm:pt-6 sm:pl-6 sm:pr-2 sm:max-w-[50%] flex flex-col h-full sm:group-even:ml-[21rem]">
           <h3 className="text-2xl font-semibold">{title}</h3>
           <p className="mt-2 leading-relaxed text-slate-700 dark:text-white/70">
             {description}
@@ -54,7 +60,7 @@ export default function Project({ project }: ProjectProps) {
           alt="Project I worked on"
           quality={95}
           className="hidden sm:block
-          absolute top-8 -right-52 w-[33rem] rounded-t-lg shadow-2xl transition
+          absolute top-8 -right-52 w-[35rem] rounded-t-lg shadow-2xl transition
         group-even:-right-[initial] 
         group-even:-left-52  
         group-hover:scale-[1.04]
@@ -67,6 +73,21 @@ export default function Project({ project }: ProjectProps) {
         group-even:group-hover:translate-y-3
         group-even:group-hover:rotate-2"
         />
+
+        <div className="hidden gap-12 absolute top-1/2 transform -translate-y-1/2 right-24 group-even:left-24 z-50 group-hover:flex transition-all delay-100">
+          <button
+            className="bg-black bg-opacity-80 text-[#00feff] text-3xl p-1.5 px-2.5 rounded-full hover:scale-110 transition-all"
+            onClick={() => handleOpenLink(demoLink)}
+          >
+            <FaEye />
+          </button>
+          <button
+            className="bg-black bg-opacity-80 text-[#00feff] text-3xl p-1.5 px-2.5 rounded-full hover:scale-110 transition-all"
+            onClick={() => handleOpenLink(githubLink)}
+          >
+            <FaGithub />
+          </button>
+        </div>
       </section>
     </motion.div>
   );
