@@ -108,6 +108,26 @@ export const experiencesData = [
 
 export const projectsData = [
   {
+    title: "Advance MERN Auth Project",
+    description:
+      "A fullstack MERN authentication project using JWT for secure login, signup, Google SSO, email verification, forgot password, and reset password.",
+    tags: [
+      "React",
+      "Node.js",
+      "Express.js",
+      "MongoDB",
+      "React Router",
+      "JWT",
+      "Tailwind",
+      "Zustand",
+      "Framer Motion",
+      "MailTrap",
+    ],
+    imageUrl: p2,
+    demoLink: "https://mern-auth-frontend-bice.vercel.app/",
+    githubLink: "https://github.com/isuruch92/mern-auth",
+  },
+  {
     title: "Instant Pizzario",
     description:
       "A simple pizza ordering webapp built with React, featuring data-fetching and form handling with React Router. It uses Redux Toolkit for state management, styled with Tailwind CSS, and hosted on Vercel.",
@@ -115,15 +135,6 @@ export const projectsData = [
     demoLink: "https://instant-pizzario.vercel.app/",
     githubLink: "https://github.com/isuruch92/fast-react-pizza",
     imageUrl: p1,
-  },
-  {
-    title: "rmtDev",
-    description:
-      "Job board for remote developer jobs. I was the front-end developer. It has features like filtering, sorting and pagination.",
-    tags: ["React", "TypeScript", "Next.js", "Tailwind", "Redux"],
-    imageUrl: p2,
-    demoLink: "https://instant-pizzario.vercel.app/",
-    githubLink: "https://github.com/isuruch92/fast-react-pizza",
   },
   {
     title: "Message Board",
