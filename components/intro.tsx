@@ -59,7 +59,7 @@ export default function Intro() {
           </div>
         </div>
 
-        <div className="hidden smx1:flex items-center justify-center">
+        <div className="hidden smx1:flex items-start justify-center">
           <Avatar />
         </div>
       </div>
