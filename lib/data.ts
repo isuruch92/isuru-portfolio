@@ -124,7 +124,7 @@ export const projectsData = [
       "MailTrap",
     ],
     imageUrl: p2,
-    demoLink: "https://mern-auth-frontend-bice.vercel.app/",
+    demoLink: "https://mern-auth-frontend.isuruch.com/",
     githubLink: "https://github.com/isuruch92/mern-auth",
   },
   {
