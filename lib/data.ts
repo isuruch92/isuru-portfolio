@@ -4,6 +4,7 @@ import { FaGraduationCap } from "react-icons/fa6";
 import p1 from "@/public/p1.jpg";
 import p2 from "@/public/p2.jpg";
 import p3 from "@/public/p3.jpg";
+import p4 from "@/public/p4.jpg";
 
 export const links = [
   {
@@ -144,6 +145,21 @@ export const projectsData = [
     imageUrl: p3,
     demoLink: "https://message-board-client-one.vercel.app/app/",
     githubLink: "https://github.com/isuruch92/message-board",
+  },
+  {
+    title: "Rebel Navigator",
+    description:
+      "A fun Angular-based app for the Rebel Alliance to locate secret entities using OpenLayers for map rendering, providing a responsive UI with integrated theming and efficient state management through RxJS.",
+    tags: [
+      "Angular",
+      "OpenLayers Maps",
+      "RxJS",
+      "Angular Material",
+      "Standalone Components",
+    ],
+    imageUrl: p4,
+    demoLink: "https://rebel-navigator.vercel.app/",
+    githubLink: "https://github.com/isuruch92/rebel-navigator",
   },
 ] as const;
 
