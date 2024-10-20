@@ -13,7 +13,7 @@ export default function Intro() {
     <section
       id="home"
       ref={ref}
-      className="mb-20 max-w-[62rem] sm:mb-0 scroll-mt-[100rem]"
+      className="mb-0 max-w-[62rem] scroll-mt-[100rem]"
     >
       <div className="flex flex-col smx1:flex-row gap-4 sm:gap-6 smx1:gap-6">
         <div className="flex smx1:hidden items-center justify-center">
@@ -40,14 +40,23 @@ export default function Intro() {
             with&nbsp;
             <span className="font-bold text-amber-600">8+ years</span> of
             experience building{" "}
-            <span className="italic text-[#1c948d] dark:text-[#00fff7]">
-              intuitive & responsive
-            </span>{" "}
-            web platforms. Proficient in{" "}
-            <span className="font-bold">React</span>,{" "}
-            <span className="font-bold">Angular</span>,{" "}
-            <span className="font-bold">JavaScript</span>, &{" "}
-            <span className="font-bold">TypeScript</span>
+            <span className="italic ">intuitive & responsive</span> web
+            platforms. Proficient in{" "}
+            <span className="font-bold text-[#09b5ad] dark:text-[#00fff7]">
+              React
+            </span>
+            ,{" "}
+            <span className="font-bold bg-gradient-to-r from-violet-400 via-fuchsia-400 to-pink-500 bg-clip-text text-transparent">
+              Angular
+            </span>
+            ,{" "}
+            <span className="font-bold bg-gradient-to-r dark:from-amber-400 from-amber-500 to-yellow-600  dark:to-yellow-500 bg-clip-text text-transparent">
+              JavaScript
+            </span>
+            , &{" "}
+            <span className="font-bold bg-gradient-to-r from-blue-400 to-sky-400 bg-clip-text text-transparent">
+              TypeScript
+            </span>
           </motion.h1>
 
           {/* This will be shown below 850px */}
