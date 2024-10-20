@@ -7,7 +7,8 @@ import { motion } from "framer-motion";
 export default function Avatar() {
   return (
     <motion.div
-      className="h-64 w-64 
+      className="h-[210px] w-[210px]
+      sm:h-64 sm:w-64
       smx2:h-72 smx2:w-72 
       smx1:h-[22rem] smx1:w-[22rem]
       relative"

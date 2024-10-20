@@ -5,6 +5,7 @@ import p1 from "@/public/p1.jpg";
 import p2 from "@/public/p2.jpg";
 import p3 from "@/public/p3.jpg";
 import p4 from "@/public/p4.jpg";
+import p5 from "@/public/p5.jpg";
 
 export const links = [
   {
@@ -138,10 +139,26 @@ export const projectsData = [
     imageUrl: p1,
   },
   {
+    title: "Voyagia",
+    description:
+      "Voyagia is a travel companion app that helps users document their journeys by adding interactive map pins and notes for visited locations. It is built with React, Leaflet, and JSON Server for handling frontend maps and backend file storage.",
+    tags: [
+      "React",
+      "Leaflet",
+      "CSS Modules",
+      "React router dom",
+      "Json-server",
+    ],
+    imageUrl: p5,
+    demoLink: "https://voyagia.vercel.app/",
+    githubLink: "https://github.com/isuruch92/voyagia",
+  },
+  {
     title: "Message Board",
     description:
       "A very simple message board application developed using a Node.js server and a React.js client. Uses React context API for state management and CSS modules for styles. Both server and client hosted on vercel.",
     tags: ["React", "Node.js", "CSS"],
+
     imageUrl: p3,
     demoLink: "https://message-board-client-one.vercel.app/app/",
     githubLink: "https://github.com/isuruch92/message-board",
