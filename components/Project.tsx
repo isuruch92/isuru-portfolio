@@ -25,10 +25,6 @@ export default function Project({ project }: ProjectProps) {
 
   const { title, description, tags, imageUrl, demoLink, githubLink } = project;
 
-  const handleOpenLink = (url: string) => {
-    window.open(url, "_blank", "noopener,noreferrer");
-  };
-
   return (
     <motion.div
       ref={ref}
