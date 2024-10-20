@@ -13,7 +13,7 @@ module.exports = {
           "conic-gradient(from 180deg at 50% 50%, var(--tw-gradient-stops))",
       },
       screens: {
-        xsx1: { min: "400px" },
+        xsx1: { min: "420px" },
         smx1: { min: "700px" },
         smx2: { min: "700px", max: "800px" },
         smx3: { min: "800px", max: "850px" },
