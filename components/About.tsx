@@ -21,7 +21,7 @@ export default function About() {
       <p className="mb-3 text-justify">
         Hello! I&apos;m a dedicated software engineer with over 8 years of
         experience in frontend development and full-stack solutions. I love
-        working with <span className="underline">React</span>,&nbsp;
+        working with <span className="underline">React (Next.js)</span>,&nbsp;
         <span className="underline">Angular</span>,&nbsp;
         <span className="underline">JavaScript </span>,&nbsp;
         <span className="underline">TypeScript</span>&nbsp; and{" "}

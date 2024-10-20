@@ -3,6 +3,8 @@
 import React from "react";
 import { motion } from "framer-motion";
 import Image from "next/image";
+import useScreenSize from "@/hooks/userScreenSize";
+import SwipeIndicator from "./SwipeIndicator";
 
 const styles: { [key: string]: React.CSSProperties } = {
   mouse: {
@@ -43,32 +45,38 @@ const styles: { [key: string]: React.CSSProperties } = {
 };
 
 export default function SectionDivider() {
+  const screenSize = useScreenSize();
+  const screenWidth = screenSize.width;
+
   return (
     <motion.div
-      className="my-20 hidden sm:block"
       initial={{ opacity: 0, y: 100 }}
       animate={{ opacity: 1, y: 0 }}
       transition={{ delay: 0.125 }}
     >
-      <div>
-        <div style={styles.mouse} className="dark:!border-white/80">
-          <div style={styles.wheel} className="dark:!bg-white/80"></div>
+      {screenWidth < 640 ? (
+        <SwipeIndicator />
+      ) : (
+        <div className="my-20 hidden sm:block">
+          <div style={styles.mouse} className="dark:!border-white/80">
+            <div style={styles.wheel} className="dark:!bg-white/80"></div>
+          </div>
+          <div>
+            <span
+              style={{ ...styles.span, ...styles.unu }}
+              className="dark:!border-r-white/80 dark:!border-b-white/80"
+            ></span>
+            <span
+              style={{ ...styles.span, ...styles.doi }}
+              className="dark:!border-r-white/80 dark:!border-b-white/80"
+            ></span>
+            <span
+              style={{ ...styles.span, ...styles.trei }}
+              className="dark:!border-r-white/80 dark:!border-b-white/80"
+            ></span>
+          </div>
         </div>
-        <div>
-          <span
-            style={{ ...styles.span, ...styles.unu }}
-            className="dark:!border-r-white/80 dark:!border-b-white/80"
-          ></span>
-          <span
-            style={{ ...styles.span, ...styles.doi }}
-            className="dark:!border-r-white/80 dark:!border-b-white/80"
-          ></span>
-          <span
-            style={{ ...styles.span, ...styles.trei }}
-            className="dark:!border-r-white/80 dark:!border-b-white/80"
-          ></span>
-        </div>
-      </div>
+      )}
     </motion.div>
   );
 }
